@@ -6,7 +6,21 @@
     "module": "esnext",
     "moduleResolution": "node",
     "target": "es2017",
-    "resolveJsonModule": true
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["./src/Assets/*"],
+      "@assets": ["./src/Assets"],
+      "@components/*": ["./src/Components/*"],
+      "@components": ["./src/Components"],
+      "@graphql/*": ["./src/GraphQL/*"],
+      "@graphql": ["./src/GraphQL"],
+      "@hooks/*": ["./src/Hooks/*"],
+      "@hooks": ["./src/Hooks"],
+      "@services/*": ["./src/Services/*"],
+      "@services": ["./src/Services"],
+      "@types/*": ["./src/Typings/*"],
+      "@types": ["./src/Typings"]
+    }
   },
-  "include": ["./typings/*.d.ts", "./**/*.tsx", "./**/*.ts"]
+  "include": ["./Typings/*.d.ts", "./**/*.tsx", "./**/*.ts"]
 }
