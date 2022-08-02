@@ -6,6 +6,8 @@
     "module": "esnext",
     "moduleResolution": "node",
     "target": "es2017",
+    "strict": true,
+    "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
       "@assets/*": ["./src/Assets/*"],
@@ -18,8 +20,9 @@
       "@hooks": ["./src/Hooks"],
       "@services/*": ["./src/Services/*"],
       "@services": ["./src/Services"],
-      "@types/*": ["./src/Typings/*"],
-      "@types": ["./src/Typings"]
+      "@typings/*": ["./src/Typings/*"],
+      "@helper/*": ["src/Helper/*"],
+      "@helper": ["src/Helper"]
     }
   },
   "include": ["./Typings/*.d.ts", "./**/*.tsx", "./**/*.ts"]

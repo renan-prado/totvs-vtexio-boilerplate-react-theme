@@ -1,18 +1,18 @@
-declare type Maybe<T> = T | null | undefined
-export declare type MaybeProduct = Maybe<Product>
-export declare type ProductSpecification = {
+type Maybe<T> = T | null | undefined
+export type MaybeProduct = Maybe<Product>
+export type ProductSpecification = {
   name: string
   originalName: string
   values: string[]
 }
 /** @deprecated Use `ProductSpecification` */
-export declare type SpecificationGroupItem = ProductSpecification
-export declare type SpecificationGroup = {
+export type SpecificationGroupItem = ProductSpecification
+export type SpecificationGroup = {
   name: string
   originalName: string
   specifications: ProductSpecification[]
 }
-export declare type Product = {
+export type Product = {
   brand: string
   brandId: string
   cacheId: string
@@ -56,7 +56,7 @@ export declare type Product = {
   specificationGroups: SpecificationGroup[]
   titleTag: string
 }
-export declare type Item = {
+export type Item = {
   complementName: string
   ean: string
   images: Array<{
@@ -84,42 +84,42 @@ export declare type Item = {
     videoUrl: string
   }>
 }
-export declare type SkuSpecification = {
+export type SkuSpecification = {
   field: SkuSpecificationField
   values: SkuSpecificationValues[]
 }
-export declare type SkuSpecificationField = {
+export type SkuSpecificationField = {
   name: string
 }
-export declare type SkuSpecificationValues = {
+export type SkuSpecificationValues = {
   name: string
 }
-export declare type Seller = {
+export type Seller = {
   sellerId: string
   sellerName: string
   addToCartLink: string
   sellerDefault: boolean
   commertialOffer: CommercialOffer
 }
-declare type TeaserCondition = {
+type TeaserCondition = {
   minimumQuantity: number
   parameters: Array<{
     name: string
     value: string
   }>
 }
-declare type TeaserEffects = {
+type TeaserEffects = {
   parameters: Array<{
     name: string
     value: string
   }>
 }
-export declare type Teaser = {
+export type Teaser = {
   name: string
   conditions: TeaserCondition
   effects: TeaserEffects
 }
-export declare type CommercialOffer = {
+export type CommercialOffer = {
   Installments: Installment[]
   discountHighlights: Array<{
     name: string
@@ -137,7 +137,7 @@ export declare type CommercialOffer = {
   taxPercentage: number
   CacheVersionUsedToCallCheckout: string
 }
-export declare type Installment = {
+export type Installment = {
   Value: number
   InterestRate: number
   TotalValuePlusInterestRate: number
@@ -146,7 +146,7 @@ export declare type Installment = {
   PaymentSystemGroupName: string
   Name: string
 }
-export declare type ItemMetadata = {
+export type ItemMetadata = {
   items: Array<{
     id: string
     name: string
@@ -169,37 +169,35 @@ export declare type ItemMetadata = {
     }>
   }>
 }
-export declare type InputValue =
-  | TextInputValue
-  | BooleanInputValue
-  | OptionsInputValue
-declare const enum InputValueType {
+export type InputValue = TextInputValue | BooleanInputValue | OptionsInputValue
+const enum InputValueType {
   'TEXT' = 'TEXT',
   'BOOLEAN' = 'BOOLEAN',
   'OPTIONS' = 'OPTIONS',
 }
-export declare type TextInputValue = {
+
+export type TextInputValue = {
   type: InputValueType.TEXT
   defaultValue: ''
   label: string
   maxLength: number
   domain: null
 }
-export declare type BooleanInputValue = {
+export type BooleanInputValue = {
   type: InputValueType.BOOLEAN
   defaultValue: boolean
   label: string
   maxLength: null
   domain: null
 }
-export declare type OptionsInputValue = {
+export type OptionsInputValue = {
   type: InputValueType.OPTIONS
   defaultValue: string
   label: string
   maxLength: null
   domain: string[]
 }
-export declare type Composition = {
+export type Composition = {
   minQuantity: number
   maxQuantity: number
   items: Array<{
