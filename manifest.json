@@ -1,11 +1,13 @@
 {
-  "vendor": "vtex",
-  "name": "minimumtheme",
+  "vendor": "twobdigital",
+  "name": "boilerplate",
   "version": "0.1.1",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
-    "docs": "0.x"
+    "react": "3.x",
+    "docs": "0.x",
+    "assets": "0.x"
   },
   "scripts": {
     "postreleasy": "vtex publish --verbose"
