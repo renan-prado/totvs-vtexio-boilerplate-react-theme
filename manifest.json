@@ -1,7 +1,7 @@
 {
   "vendor": "twobdigital",
-  "name": "boilerplate",
-  "version": "0.1.1",
+  "name": "totvs-omni",
+  "version": "0.0.7",
   "builders": {
     "styles": "2.x",
     "store": "0.x",

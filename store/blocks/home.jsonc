@@ -2,7 +2,7 @@
   "store.home": {
     "blocks": [
       "rich-text",
-      "lex-layout.row#my-component"
+      "flex-layout.row#my-component"
     ]
   },
   "rich-text": {
