@@ -1,10 +1,8 @@
+import type { ReactNode } from 'react'
 import React from 'react'
-import type { IBoilerplateTemplate } from '@typings/boilerplate'
-import { Template } from '@boilerplate/ui'
 
-const MainTemplate: StorefrontFC<IBoilerplateTemplate> = ({
-  children,
-  name,
-}) => <Template name={name}>{children}</Template>
+const MainTemplate: StorefrontFC<{ children: ReactNode }> = ({ children }) => (
+  <div className="t-main">{children}</div>
+)
 
 export default MainTemplate

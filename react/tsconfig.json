@@ -22,8 +22,7 @@
       "@services": ["./src/Services"],
       "@typings/*": ["./src/Typings/*"],
       "@helper/*": ["src/Helper/*"],
-      "@helper": ["src/Helper"],
-      "@boilerplate/*": ["boilerplate/*"]
+      "@helper": ["src/Helper"]
     }
   },
   "include": ["./Typings/*.d.ts", "./**/*.tsx", "./**/*.ts"]

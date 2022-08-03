@@ -1,16 +1,15 @@
 import React from 'react'
-import { App } from '@boilerplate/ui'
 
 import SkuSelector from './SkuSelector.app'
-import { MainTemplate } from './Components/Templates'
-import { componentName } from './Helper'
+import Context from './Context'
+import { COMPONENT_NAME } from './Helper'
 
 const main = () => (
-  <App name={componentName()}>
-    <MainTemplate name="name">
+  <Context.Provider value={{ componentName: COMPONENT_NAME }}>
+    <div className={`app--${COMPONENT_NAME}`}>
       <SkuSelector />
-    </MainTemplate>
-  </App>
+    </div>
+  </Context.Provider>
 )
 
 export default main
