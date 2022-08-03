@@ -1,5 +1,5 @@
 {
-  "my-component": {
-    "component": "MyComp"
+  "sku-selector": {
+    "component": "SkuSelector"
   }
 }

@@ -1,12 +1,16 @@
 import React from 'react'
+import { App } from '@boilerplate/ui'
 
-import MyComponent from './SkuSelector.app'
-import { Main } from './Components/Templates'
+import SkuSelector from './SkuSelector.app'
+import { MainTemplate } from './Components/Templates'
+import { componentName } from './Helper'
 
 const main = () => (
-  <Main>
-    <MyComponent />
-  </Main>
+  <App name={componentName()}>
+    <MainTemplate name="name">
+      <SkuSelector />
+    </MainTemplate>
+  </App>
 )
 
 export default main

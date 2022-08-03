@@ -2,7 +2,7 @@
   "store.home": {
     "blocks": [
       "rich-text",
-      "flex-layout.row#my-component-index"
+      "flex-layout.row#sku-selector"
     ]
   },
   "rich-text": {
@@ -13,9 +13,9 @@
       "font": "t-heading-1"
     }
   },
-  "flex-layout.row#my-component-index": {
+  "flex-layout.row#sku-selector": {
     "children": [
-      "my-component"
+      "sku-selector"
     ]
   }
 }

@@ -1,8 +1,10 @@
-import type { IBoilerplateTemplate } from '@typings/boilerplate'
 import React from 'react'
+import type { IBoilerplateTemplate } from '@typings/boilerplate'
+import { Template } from '@boilerplate/ui'
 
-const Template: StorefrontFC<IBoilerplateTemplate> = ({ children }) => (
-  <>{children}</>
-)
+const MainTemplate: StorefrontFC<IBoilerplateTemplate> = ({
+  children,
+  name,
+}) => <Template name={name}>{children}</Template>
 
-export default Template
+export default MainTemplate

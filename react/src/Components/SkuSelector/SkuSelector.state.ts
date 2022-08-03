@@ -7,7 +7,7 @@ interface IHookUseText {
 }
 
 const useText = create<IHookUseText>(set => ({
-  text: '',
+  text: 'Texto Inicial',
   setText: text => set({ text }),
   clearText: () => set({ text: '' }),
 }))

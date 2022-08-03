@@ -5,7 +5,7 @@ import { useText } from './SkuSelector.state'
 const SkuSelector: StorefrontFC = () => {
   const { text } = useText()
 
-  return <>{text}</>
+  return <span>{text}</span>
 }
 
 export default SkuSelector
